@@ -11,10 +11,10 @@ export class RecipeListComponent implements OnInit {
  
 
   recipes:Recipes[] =[
-    new Recipes('pan cake',"this is the first recipe","pan-cake.jpeg"),
-    new Recipes('hot cuttle fish',"this is the first recipe","hot-butter-cuttlefish.jpg"),
-    new Recipes('pan-fired-salmon',"this is the first recipe","pan-fired-salmon.jpeg"),
-    new Recipes('uludu-wade',"this is the first recipe","uludu-wade.jpg")
+    new Recipes('pan cake',"This is the first recipe, very delious.","pan-cake.jpeg"),
+    new Recipes('hot cuttle fish',"This is the secong recipe","hot-butter-cuttlefish.jpg"),
+    new Recipes('pan-fired-salmon',"This is the third recipe","pan-fired-salmon.jpeg"),
+    new Recipes('uludu-wade',"This is the first fouth","uludu-wade.jpg")
   ];
 
   
