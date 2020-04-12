@@ -3,32 +3,10 @@
         <button class="btn btn-success m-3">NEW RECIPE</button>
     </div>
 
-    <div class="card mb-1 " *ngFor="let recipe of recipes">
-        <a href="#" class="list-group-item-action">
-            <div class="card-header">
-                {{recipe.name}}
-            </div>
+    <div class="card mb-1 " *ngFor="let recipeEl of recipes">
+        
 
-            <div class="card-body">
-
-                <div class="row d-flex justify-content-around">
-                    <div class="col-md-6">
-                        <p class="card-text">{{recipe.description}}</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="">
-                            <img class="" [src]="'../assets/recipes-images/'+recipe.imagePath" alt="recipe.imagePath"
-                                style="max-height: 150px;max-width: 150px;float: right;">
-                        </span>
-                    </div>
-                </div>
-                <!-- <a href="#" class="btn btn-outline-success">Go somewhere</a> -->
-
-            </div>
-        </a>
-
-    </div>
-
-    <app-recipe-item></app-recipe-item>
+    <app-recipe-item [recipe]="recipeEl"></app-recipe-item>
+</div>
 
 </div>

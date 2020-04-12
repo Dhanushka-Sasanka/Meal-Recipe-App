@@ -1,12 +1,12 @@
-<app-header></app-header>
+<app-header (featureType)="onNavigate($event)"></app-header>
 
 <div class="container-fluid mt-5">
   <div class="row">
-    <div class="col-md-12">
-      <app-recipes></app-recipes>
+    <div class="col-md-12" *ngIf="routePath === 'recipe'">
+      <app-recipes ></app-recipes>
     </div>
-    <div class="col-md-12">
-      <app-shopping-list></app-shopping-list>
+    <div class="col-md-12" *ngIf="routePath !== 'recipe'">
+      <app-shopping-list ></app-shopping-list>
     </div>
   </div>
 </div>
