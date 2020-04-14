@@ -4,9 +4,10 @@
     </div>
 
     <div class="card mb-1 " *ngFor="let recipeEl of recipes">
-        
 
-    <app-recipe-item [recipe]="recipeEl"></app-recipe-item>
-</div>
+
+        <app-recipe-item [recipe]="recipeEl" 
+        (recipe-detail-event-emitter)="recipeWasSelected(recipeEl)"></app-recipe-item>
+    </div>
 
 </div>

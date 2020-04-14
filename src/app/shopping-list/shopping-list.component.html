@@ -1,7 +1,7 @@
 <div class="">
     <div class="row">
         <div class="col-md-6">
-            <app-shopping-item></app-shopping-item>
+            <app-shopping-item (on-shopping-item-added)="onIncredinentAdded($event)"></app-shopping-item>
             <hr>
 
             <!-- <ul class="list-group">
@@ -16,7 +16,7 @@
                 <a href="#" class="list-group-item list-group-item-action" 
                 *ngFor="let incredient of incredients">
                     {{incredient.name}} 
-                    <span class="badge badge-info">{{incredient.amount}}]</span>    
+                    <span class="badge badge-info">{{incredient.amount}}</span>    
                 </a>
             </div>
         </div>
