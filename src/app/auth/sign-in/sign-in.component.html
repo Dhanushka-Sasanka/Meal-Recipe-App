@@ -1,1 +1,13 @@
-<p>sign-in works!</p>
+<div class="row">
+    <div class="col-md-6">
+        <form #f="ngForm">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" class="form-control" ngModel="email">
+
+            <label for="password">Password</label>
+            <input type="text" name="password" id="password" class="form-control" ngModel="password">
+
+            <button type="button" class="btn btn-primary" (click)="singInData(f)">Sign in</button>
+        </form>
+    </div>
+</div>
