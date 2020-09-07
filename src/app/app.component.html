@@ -1,7 +1,14 @@
+
+
 <app-header (featureType)="onNavigate($event)"></app-header>
 
+
 <div class="container-fluid mt-5">
+
+  <router-outlet></router-outlet>
   <div class="row">
+    
+
     <div class="col-md-12" *ngIf="routePath === 'recipe'">
       <app-recipes ></app-recipes>
     </div>
@@ -9,4 +16,5 @@
       <app-shopping-list ></app-shopping-list>
     </div>
   </div>
+
 </div>
